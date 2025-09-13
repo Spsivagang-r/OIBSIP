@@ -1,184 +1,90 @@
-/* Background with gradient */
 body {
-  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
-  background-size: 300% 300%;
-  animation: gradientBG 6s ease infinite;
+  height: 100vh;
+  background: #4a90e2;
+  font-family: Arial, sans-serif;
 }
 
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.todo-container {
-  background: rgba(255, 255, 255, 0.9);
+.calculator {
+  width: 320px;
+  background: #fdfdfd;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
   padding: 20px;
-  width: 420px;
-  text-align: center;
-  backdrop-filter: blur(8px);
 }
 
-h2 {
-  margin: 0 0 15px;
-  color: #444;
-  font-weight: bold;
-}
-
-.input-section {
-  display: flex;
-  gap: 5px;
-}
-
-input, select, button {
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  outline: none;
-  font-size: 14px;
-}
-
-input {
-  flex: 1;
-  border: 2px solid #ddd;
-}
-
-select {
-  border: 2px solid #ddd;
-}
-
-button {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  transform: scale(1.1);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-  max-height: 250px;
-  overflow-y: auto;
-}
-
-li {
-  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
-  padding: 12px;
-  margin-bottom: 10px;
+.display {
+  background: #eaf2fb;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  animation: fadeIn 0.5s ease;
+  padding: 10px;
+  text-align: right;
+  min-height: 60px;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.expression {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.result {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.task-text {
-  flex: 1;
-}
-
-.completed {
-  text-decoration: line-through;
-  color: #28a745 !important;
-  background: linear-gradient(135deg, #d4fc79, #96e6a1) !important;
-  transition: 0.3s;
-}
-
-.category {
-  font-size: 12px;
-  padding: 2px 8px;
-  border-radius: 8px;
-  color: white;
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-.Work { background: #ff4757; }
-.Personal { background: #ffa502; }
-.Study { background: #1e90ff; }
-.Other { background: #2ed573; }
-
-.delete {
-  cursor: pointer;
-  font-weight: bold;
-  color: #e74c3c;
-  margin-left: 10px;
-  transition: 0.3s;
-}
-
-.delete:hover {
-  transform: scale(1.3) rotate(15deg);
-}
-
-.time {
-  font-size: 11px;
-  color: #333;
-  margin-left: 10px;
-}
-
-.toggle {
-  margin-top: 10px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #2575fc;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.toggle:hover {
-  color: #6a11cb;
-}
-
-/* Progress bar */
-.progress-container {
-  background: #ddd;
+button {
+  height: 55px;
+  font-size: 1.2rem;
+  border: none;
   border-radius: 10px;
-  height: 15px;
-  margin-top: 15px;
-  overflow: hidden;
+  cursor: pointer;
+  background: #dce6f5;
+  transition: 0.2s;
 }
 
-.progress-bar {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  height: 100%;
-  width: 0%;
-  transition: width 0.3s ease;
+button:hover {
+  background: #c8d9f0;
 }
 
-/* Dark Mode */
-.dark-mode {
-  background: linear-gradient(135deg, #000000, #434343);
-  animation: none;
+.operator {
+  background: #b5d3f2;
 }
 
-.dark-mode .todo-container {
-  background: rgba(30, 30, 30, 0.9);
+.clear {
+  background: #ff6b6b;
   color: white;
 }
 
-.dark-mode li {
-  background: linear-gradient(135deg, #434343, #000000);
+.clear:hover {
+  background: #e65b5b;
 }
 
-.dark-mode .progress-container {
-  background: #444;
+.enter {
+  grid-column: span 2;
+  background: #4CAF50;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.enter:hover {
+  background: #45a049;
+}
+
+.del {
+  background: #ffa94d;
+  color: white;
+}
+
+.del:hover {
+  background: #e68a2e;
 }
