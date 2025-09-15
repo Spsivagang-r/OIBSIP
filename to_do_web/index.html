@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> To-Do Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h2>  To-Do Web</h2>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter task...">
+      <select id="category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Study">Study</option>
+        <option value="Other">Other</option>
+      </select>
+      <button onclick="addTask()">➕</button>
+    </div>
+    <ul id="taskList"></ul>
+
+    <!-- Progress bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <p id="progressText">0 / 0 tasks completed</p>
+
+    <div class="toggle" onclick="toggleMode()">  Toggle Dark Mode</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
