@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tribute to Dr. A. P. J. Abdul Kalam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand"><a href="#hero">Tribute</a></div>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainMenu">☰</button>
+      <ul id="mainMenu" class="nav-list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#life">About</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <div class="portrait">
+          <img src="images/tribute.jpg" alt="Portrait of Dr. A. P. J. Abdul Kalam">
+        </div>
+        <div class="hero-text">
+          <h1 class="name">Dr. A. P. J. Abdul Kalam</h1>
+          <p class="tagline">The Missile Man of India & People's President</p>
+          <p class="lead" id="leadParagraph">
+            <span class="typewriter" data-text="Scientist. Teacher. Visionary. President. A true inspiration for generations of Indians."></span>
+          </p>
+          <div class="hero-actions">
+            <button id="readMoreBtn" class="btn" aria-expanded="false">Read more</button>
+            <a class="btn btn-ghost" href="#timeline">See timeline</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="life" class="container card">
+      <h2>About</h2>
+      <p>
+        Avul Pakir Jainulabdeen Abdul Kalam (1931 – 2015) was an Indian aerospace scientist and the 11th President of India.
+        Widely known as the "Missile Man of India", he played a pivotal role in India’s civilian space programme and military missile development.
+      </p>
+      <div class="highlights">
+        <article class="highlight">
+          <h3>Scientist</h3>
+          <p>Key figure in ISRO and DRDO; led India’s missile and nuclear weapons programs.</p>
+        </article>
+        <article class="highlight">
+          <h3>President</h3>
+          <p>Served as the 11th President of India (2002–2007) and was fondly called the “People’s President”.</p>
+        </article>
+        <article class="highlight">
+          <h3>Teacher</h3>
+          <p>Even after presidency, he continued to inspire students across the country with his lectures and books.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="container timeline">
+      <h2>Timeline</h2>
+      <ol>
+        <li><strong>1931</strong> – Born in Rameswaram, Tamil Nadu.</li>
+        <li><strong>1960</strong> – Graduated in Aerospace Engineering from Madras Institute of Technology.</li>
+        <li><strong>1969</strong> – Joined ISRO; Project Director of India’s first satellite launch vehicle (SLV-III).</li>
+        <li><strong>1980s–90s</strong> – Played key role in development of ballistic missiles (Agni, Prithvi).</li>
+        <li><strong>1998</strong> – Instrumental in India’s nuclear tests at Pokhran-II.</li>
+        <li><strong>2002</strong> – Became the 11th President of India.</li>
+        <li><strong>2015</strong> – Passed away while delivering a lecture at IIM Shillong.</li>
+      </ol>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="container gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/photo1.jpg" alt="Kalam with students">
+          <figcaption>Inspiring the youth of India</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo2.jpg" alt="Kalam as President">
+          <figcaption>As the President of India</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo3.jpg" alt="Kalam in ISRO lab">
+          <figcaption>Working in ISRO</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote card">
+      <blockquote>
+        "Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."
+        <cite>— Dr. A. P. J. Abdul Kalam</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <div class="container footer-inner">
+      <p>Tribute to <strong>Dr. A. P. J. Abdul Kalam</strong> | Made with ♥ by Students of India</p>
+      <button id="topBtn" class="top-btn" title="Back to top">↑</button>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
